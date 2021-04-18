@@ -114,7 +114,7 @@ this.setState({input : event.target.value});
 
 onButtonSubmit = () => {
   this.setState({ImageURL : this.state.input})
-  fetch('http://localhost:3000/imageurl',{
+  fetch('https://murmuring-fortress-13514.herokuapp.com/imageurl',{
       method:'post',
       headers:{'Content-Type' : 'application/json'},
       body: JSON.stringify({
@@ -124,7 +124,7 @@ onButtonSubmit = () => {
     .then(response => response.json())
     .then(response => {
   if(response) {
-    fetch('http://localhost:3000/image',{
+    fetch('https://murmuring-fortress-13514.herokuapp.com/image',{
       method:'put',
       headers:{'Content-Type' : 'application/json'},
       body: JSON.stringify({
@@ -175,7 +175,7 @@ onButtonSubmit = () => {
     
     route ==='signIn'
   ?<SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange} /> 
-  :<Register loadUser={this.loadUser} onRouteChange={this.onRouteChange} /> 
+  :<Register onRouteChange={this.onRouteChange} loadUser={this.loadUser}  /> 
   
   )
   }

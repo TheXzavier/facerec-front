@@ -95,7 +95,8 @@ class Register extends React.Component {
        onClick={this.onSubmitSignIn}
         
         className="br2 ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Register"/>
-      { this.state.errorCheck === 3 && <p>Congrats!! You Have Been Registered. Note:Make sure you do not enter an invalid email you will not be registered.</p> }
+      { this.state.errorCheck === 3 && <p className= "b">Congrats!! You Have Been Registered.</p> }
+      { this.state.errorCheck === 3 && <p>Note:Make sure you do not enter an invalid email you will not be registered.</p> }
       </div>
     
     </div>

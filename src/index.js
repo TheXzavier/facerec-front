@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import 'tachyons';
 import reportWebVitals from './reportWebVitals';
+import Mobile from './components/Mobile/Mobile.js'
 
 ReactDOM.render(
   <React.StrictMode>
+   <div>
+
+  
     <App />
+   </div>
   </React.StrictMode>,
   document.getElementById('root')
 );

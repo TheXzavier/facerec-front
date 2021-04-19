@@ -8,6 +8,10 @@ import FaceRecognition from './components/FaceRecognition/FaceRecognition'
 import ParallaxEffectGlareScale from './components/Logo2/Logo2'
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
 import Rank from './components/Rank/Rank'
+import Mobile from './components/Mobile/Mobile.js'
+
+
+
 import './particles.css'
 
 
@@ -149,12 +153,18 @@ onButtonSubmit = () => {
   
   return (
   <div className="App"> 
+  
+  
+  
   <Particles className="particles"
   
   params={particlesOptions}
   
   />
+  
+  
   <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange}/>
+  <Mobile  />
   
   {route === 'home'
   

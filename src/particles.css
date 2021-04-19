@@ -4,4 +4,11 @@ and (max-device-width : 480px) {
 .particles{
  visibility: hidden;
 }
+.App{
+    visibility: hidden;
+}
+.mobileSupport{
+    visibility: visible;
+  }
+  
 }

@@ -23,7 +23,7 @@ constructor(props) {
 
 
 onSubmitSignIn = () => {
-  fetch('https://creative-halva-b15d9b.netlify.app/signin',{
+  fetch('https://facerec-api.vercel.app/signin',{
     method:'post',
     headers:{'Content-Type' : 'application/json'},
     body: JSON.stringify({

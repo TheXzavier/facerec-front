@@ -118,7 +118,7 @@ this.setState({input : event.target.value});
 
 onButtonSubmit = () => {
   this.setState({ImageURL : this.state.input})
-  fetch('https://murmuring-fortress-13514.herokuapp.com/imageurl',{
+  fetch('https://creative-halva-b15d9b.netlify.app/imageurl',{
       method:'post',
       headers:{'Content-Type' : 'application/json'},
       body: JSON.stringify({
@@ -128,7 +128,7 @@ onButtonSubmit = () => {
     .then(response => response.json())
     .then(response => {
   if(response) {
-    fetch('https://murmuring-fortress-13514.herokuapp.com/image',{
+    fetch('https://creative-halva-b15d9b.netlify.app/image',{
       method:'put',
       headers:{'Content-Type' : 'application/json'},
       body: JSON.stringify({

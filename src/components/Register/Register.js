@@ -23,7 +23,7 @@ class Register extends React.Component {
   
   onSubmitSignIn = (event) => {
     event.preventDefault()
-    fetch('https://creative-halva-b15d9b.netlify.app/register',{
+    fetch('https://facerec-api.vercel.app/register',{
       
       method:'post',
       headers:{'Content-Type' : 'application/json'},
